@@ -1,0 +1,17 @@
+{
+  "name": "contact-form-api",
+  "version": "1.0.0",
+  "description": "A simple contact form with API to learn web development fundamentals",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["express", "api", "contact-form", "learning"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
