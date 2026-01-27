@@ -13,15 +13,19 @@
          <form action="/form-submitted" method="post">
             <p>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="contact_name">
+                <input type="text" id="name" name="contact_name" placeholder="John Rawls">
             </p>
             <p>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="contact_email">
+                <input type="email" id="email" name="contact_email" placeholder="john.rawls@philosophy.com">
             </p>
             <p>
                 <label for="message">Message:</label>
-                <textarea id="message" name="contact_message"></textarea>
+                <textarea id="message" name="contact_message" placeholder="What do you want to say?"></textarea>
+            </p>
+            <p>
+                <label for="approval">I consent to having my details added to the API.</label>
+                <input type="checkbox" id="approval" name="db_approval">
             </p>
          </form>
         
