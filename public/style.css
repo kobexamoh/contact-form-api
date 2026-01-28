@@ -26,3 +26,7 @@ h1 {
 }
 
 /* Add your own styles here! */
+:root {
+    --primary: #0F172A;
+    --secondary: #64748B;
+}
