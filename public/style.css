@@ -28,11 +28,12 @@ h1 {
 :root {
     --primary: #0F172A;
     --secondary: #64748B;
+    --base-font-size: 16px;
 }
 
 #contact-form label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     color: var(--primary);
     font-weight: 600;
 }
@@ -45,4 +46,8 @@ h1 {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 6px;
+}
+
+#contact-form textarea {
+    resize: vertical;
 }
