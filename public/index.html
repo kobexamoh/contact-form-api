@@ -11,6 +11,7 @@
 <body>
     <div class="container">
         <h1>Contact Form</h1>
+        <!-- TODO: add inline validation after each input field -->
         <form action="/form-submitted" method="post" id="contact-form">
             <p>
                 <label for="name">Name:</label>
@@ -28,6 +29,7 @@
                 <input type="checkbox" id="approval" name="db_approval" required>
                 <label for="approval" id="consent">I consent to having my details added to the API.</label>
             </p>
+            <!-- TODO: disable submit until all required fields (possibly even required ones) are filled -->
             <p>
                 <button type="submit">
                     Post your message
