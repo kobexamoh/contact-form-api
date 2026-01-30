@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <h1>Contact Form</h1>
-        <form action="/form-submitted" method="post">
+        <form action="/form-submitted" method="post" id="contact-form">
             <p>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="contact_name" placeholder="John Rawls" autocomplete="on">
@@ -25,8 +25,8 @@
                 <textarea id="message" name="contact_message" placeholder="What do you want to say?"></textarea>
             </p>
             <p>
-                <label for="approval">I consent to having my details added to the API.</label>
-                <input type="checkbox" id="approval" name="db_approval">
+                <label for="approval" id="consent">I consent to having my details added to the API.</label>
+                <input type="checkbox" id="approval" name="db_approval" required>
             </p>
             <p><button type="submit">
                     Submit
