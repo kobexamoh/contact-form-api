@@ -51,3 +51,10 @@ h1 {
 #contact-form textarea {
     resize: vertical;
 }
+
+#contact-form #consent {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 400;
+    color: var(--secondary);
+}
