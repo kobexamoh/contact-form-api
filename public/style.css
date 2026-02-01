@@ -28,6 +28,7 @@ h1 {
 :root {
     --primary: #0F172A;
     --secondary: #64748B;
+    --accent: #324267;
     --base-font-size: 16px;
 }
 
@@ -57,4 +58,18 @@ h1 {
     margin-left: 10px;
     font-weight: 400;
     color: var(--secondary);
+}
+
+#contact-form button {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: 600;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 6px;
+}
+
+#contact-form button:hover {
+    background-color: var(--accent);
 }
