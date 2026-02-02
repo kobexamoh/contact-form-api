@@ -8,10 +8,12 @@
     "start": "node server.js",
     "dev": "node --watch server.js"
   },
-  "keywords": ["express", "api", "contact-form", "learning"],
+  "keywords": [
+    "express",
+    "api",
+    "contact-form",
+    "learning"
+  ],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+  "license": "ISC"
 }
