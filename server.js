@@ -1,8 +1,9 @@
 // TODO: Import Express
-// Hint: import express from 'express';
+import express from "express";
 
 // TODO: Create an Express app
-// Hint: const app = express();
+const app = express();
+const PORT = 8080;
 
 // TODO: Set up middleware to parse JSON request bodies
 // Hint: app.use(express.json());
@@ -26,3 +27,6 @@ const contacts = [];
 
 // TODO: Start the server on port 3000
 // Hint: app.listen(3000, () => { console.log('Server running...'); });
+app.listen(PORT, () => {
+    console.log("Server running on localhost:" + PORT);
+});
