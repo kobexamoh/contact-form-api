@@ -1,12 +1,12 @@
-// TODO: Import Express
+// Import Express
 import express from "express";
 
-// TODO: Create an Express app
+// Create an Express app
 const app = express();
 const PORT = 8080;
 
-// TODO: Set up middleware to parse JSON request bodies
-// Hint: app.use(express.json());
+// Set up the middleware to parse JSON request bodies
+app.use(express.json());
 
 // TODO: Serve static files from the 'public' folder
 // Hint: app.use(express.static('public'));
