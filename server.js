@@ -8,6 +8,11 @@ const PORT = 8080;
 // Set up the middleware to parse JSON request bodies
 app.use(express.json());
 
+// just for testing - making a request and a response?
+app.get("/", (req, res) => {
+    res.send("Hey, here's a response from the server.");
+})
+
 // TODO: Serve static files from the 'public' folder
 // Hint: app.use(express.static('public'));
 
