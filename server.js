@@ -11,10 +11,13 @@ app.use(express.json());
 // just for testing - making a request and a response?
 app.get("/", (req, res) => {
     res.send("Hey, here's a response from the server.");
-})
+});
 
-// TODO: Serve static files from the 'public' folder
-// Hint: app.use(express.static('public'));
+// make a request to an endpoint and log the response
+app.get("/userboard", (req, res) => {
+    console.log("Receved a GET request at /userboard");
+    res.send("This the response from the /userboard endpoint.");
+});
 
 // In-memory storage for contacts
 const contacts = [];
