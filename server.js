@@ -19,6 +19,9 @@ app.get("/userboard", (req, res) => {
     res.send("This the response from the /userboard endpoint.");
 });
 
+// serve up the static files in the public folder
+app.use(express.static("public"));
+
 // In-memory storage for contacts
 const contacts = [];
 
