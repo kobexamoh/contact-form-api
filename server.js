@@ -32,6 +32,11 @@ const contacts = [];
 // 3. Add it to the contacts array
 // 4. Send back a success response
 
+// Create POST endpoint at /contact
+app.post("/form-submitted", (req, res) => {
+    res.send("Received a POST request at /form-submitted");
+})
+
 // TODO: Create a GET endpoint at /contacts
 // This should:
 // 1. Return all contacts in the array
