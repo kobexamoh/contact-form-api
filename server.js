@@ -47,7 +47,6 @@ app.post("/form-response", (req, res) => {
 })
 
 // TODO: conceptually understand why request to a blank route works but not to a route that already has content on it.
-
 // TODO: Create a GET endpoint at /contacts
 // This should:
 // 1. Return all contacts in the array
