@@ -20,7 +20,10 @@ app.get("/userboard", (req, res) => {
 });
 
 // serve up the static files in the public folder
-app.use(express.static("public"));
+// app.use(express.static("public"));
+
+// use virtual path to serve static files from the public folder
+app.use("/public", express.static("public"));
 
 // In-memory storage for contacts
 const contacts = [];
@@ -31,6 +34,19 @@ const contacts = [];
 // 2. Validate the data (name, email, message)
 // 3. Add it to the contacts array
 // 4. Send back a success response
+
+// Create POST endpoint at /form-submitted for testing purposes
+app.post("/form-submitted", (req, res) => {
+    res.send("Received a POST request at /form-submitted");
+})
+
+// POST endpoint for testing not working: attempt test with GET endpoint to new route to see if that serves back a response.
+app.post("/form-response", (req, res) => {
+    res.send("<h1>Received a POST request at /form-response</h1>");
+    console.log("Hello from the terminal in the server. I'm confirming that a POST request was made to /form-response");
+})
+
+// TODO: conceptually understand why request to a blank route works but not to a route that already has content on it.
 
 // TODO: Create a GET endpoint at /contacts
 // This should:

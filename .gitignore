@@ -45,3 +45,6 @@ lerna-debug.log*
 
 # Warp terminal files
 AGENTS.md
+
+# Project-specific
+/dailyupdates/
