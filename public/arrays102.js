@@ -228,3 +228,11 @@ const championsLeaguePlayers = [
     previousLeaguesPlayedIn: ["Serie A", "Austrian Bundesliga", "Danish Superliga"],
   }
 ];
+
+/* Part 1: Asking some yes/no questions about the data.
+    - 1.1: The "Some" Check: Use .some() to find out if there is at least one player in the list who has played over 1000 minutes. (Store the result in a variable called hasMarathonPlayer).
+
+    - The "Every" Check: Use .every() to see if every player in the list has at least 0 yellow cards. (Store this in allFairPlayers).
+    
+    - The "Includes" Check: Use the previousLeaguesPlayedIn array of a specific player (let's pick uclPlayers[2], which is Haaland). Use .includes() to check if he has ever played in the "Bundesliga".
+*/
