@@ -260,4 +260,11 @@ const frenchPlayers = championsLeaguePlayers.filter( player => player.country.to
 console.log(frenchPlayers);
 
 // log just their names
-console.log(frenchPlayers.name);
+// console.log(frenchPlayers.name);
+
+// oops. Arrays don't have a name property -- need map.
+
+// log just the names
+const frenchPlayerNames = frenchPlayers.map( player => player.name);
+
+console.log(frenchPlayerNames);
