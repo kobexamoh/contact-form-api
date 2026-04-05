@@ -231,3 +231,33 @@ const championsLeaguePlayers = [
 */
 
 let userInput = 'fRaNcE';
+
+//console.log(championsLeaguePlayers);
+
+//console.log(userInput.toLowerCase());
+
+// sanitized input
+const normalizedUserInput = userInput.toLowerCase();
+
+
+/*
+// Test attempt: players who play for Real Madrid right now
+const madridPlayers = championsLeaguePlayers.filter(player => player.club === 'Real Madrid');
+console.log(madridPlayers);
+*/
+
+/* Test attempt: players who have played for Monaco previously
+const formerMonacoPlayers = championsLeaguePlayers.filter( player => player.previousClubs.includes('Monaco'));
+console.log(formerMonacoPlayers);
+*/
+
+/*
+Final go: players from France
+*/
+const frenchPlayers = championsLeaguePlayers.filter( player => player.country.toLowerCase().includes(normalizedUserInput));
+
+// logs array of players
+console.log(frenchPlayers);
+
+// log just their names
+console.log(frenchPlayers.name);
